@@ -1,0 +1,12 @@
+:root { --bg:#0b1020; --card:#0f1724; --accent:#d1fae5; --muted:#9aa4b2; }
+* { box-sizing:border-box; font-family:Inter, sans-serif; }
+body { margin:0; background:#0b1020; color:var(--accent); }
+.top { padding:28px; text-align:center; }
+.subtitle { color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:16px; padding:16px; }
+.card { background:var(--card); padding:16px; border-radius:12px; border:1px solid rgba(255,255,255,0.05); }
+.rank { font-size:22px; margin-bottom:8px; color:#8ff; }
+.admin { margin:16px; padding:12px; background:rgba(255,255,255,0.05); border-radius:8px; }
+.admin input { display:block; width:100%; margin:6px 0; padding:8px; border-radius:6px; }
+.preview { background:#081323; padding:8px; border-radius:6px; max-height:200px; overflow:auto; }
+footer { text-align:center; color:var(--muted); padding:16px; }
