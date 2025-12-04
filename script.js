@@ -30,6 +30,7 @@ return `
 <div class="rank">#${rank}</div>
 <h3>${escape(lvl.name)}</h3>
 <p><strong>Author:</strong> ${escape(lvl.author)}</p>
+<p><strong>Id:</strong> ${escape(lvl.id)}</p>
 <p><strong>Verifier:</strong> ${escape(lvl.verifier)}</p>
 <p><strong>Victors:</strong> ${victors.length ? victors.map(escape).join(", ") : "Nenhum"}</p>
 </article>
@@ -46,6 +47,7 @@ return String(s).replace(/[&<>"']/g, c => ({
 "'": "&#39;"
 })[c]);
 }
+
 
 
 loadLevels();
